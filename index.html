@@ -25,6 +25,10 @@
         #buttons .button {
             margin-bottom: 5px;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-right: 15px;
+        }
     </style>
 </head>
 
@@ -41,10 +45,10 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">Navbar Item</a>
+                <a class="navbar-item">.navbar-item</a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">Dropdown</a>
+                    <a class="navbar-link">.has-dropdown</a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item">Item 1</a>
                         <a class="navbar-item">Item 2</a>
@@ -84,46 +88,57 @@
 
     <br>
 
+
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-half">
+                <h2 class="title has-text-centered">Titles</h2>
+                <div class="box">
+                    <h1 class="title is-1">.title.is-1</h1>
+                    <h2 class="title is-2">.title.is-2</h2>
+                    <h2 class="title is-3">.title.is-3</h2>
+                    <h2 class="title is-4">.title.is-4</h2>
+                    <h2 class="title is-5">.title.is-5</h2>
+                    <h2 class="title is-6">.title.is-6</h2>
+                </div>
+            </div>
+            <div class="column is-half">
+                <h2 class="title has-text-centered">Subtitles</h2>
+
+                <div class="box">
+                    <h1 class="subtitle is-1">.subtitle.is-1</h1>
+                    <h1 class="subtitle is-2">.subtitle.is-2</h1>
+                    <h1 class="subtitle is-3">.subtitle.is-3</h1>
+                    <h1 class="subtitle is-4">.subtitle.is-4</h1>
+                    <h1 class="subtitle is-5">.subtitle.is-5</h1>
+                    <h1 class="subtitle is-6">.subtitle.is-6</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
     <h2 class="title has-text-centered">Columns</h2>
 
     <div class="container" id="columns">
         <div class="columns">
-            <div class="column is-full solid">
-                .is-full
-            </div>
+            <div class="column is-full solid">.is-full</div>
         </div>
         <div class="columns">
-            <div class="column is-half solid">
-                .is-half
-            </div>
-            <div class="column is-half solid">
-                .is-half
-            </div>
+            <div class="column is-half solid">.is-half</div>
+            <div class="column is-half solid">.is-half</div>
         </div>
         <div class="columns">
-            <div class="column is-one-third solid">
-                .is-one-third
-            </div>
-            <div class="column is-one-third solid">
-                .is-one-third
-            </div>
-            <div class="column is-one-third solid">
-                .is-one-third
-            </div>
+            <div class="column is-one-third solid">.is-one-third</div>
+            <div class="column is-one-third solid">.is-one-third</div>
+            <div class="column is-one-third solid">.is-one-third</div>
         </div>
         <div class="columns">
-            <div class="column is-one-quarter solid">
-                .is-one-quarter
-            </div>
-            <div class="column is-one-quarter solid">
-                .is-one-quarter
-            </div>
-            <div class="column is-one-quarter solid">
-                .is-one-quarter
-            </div>
-            <div class="column is-one-quarter solid">
-                .is-one-quarter
-            </div>
+            <div class="column is-one-quarter solid">.is-one-quarter</div>
+            <div class="column is-one-quarter solid">.is-one-quarter</div>
+            <div class="column is-one-quarter solid">.is-one-quarter</div>
+            <div class="column is-one-quarter solid">.is-one-quarter</div>
         </div>
         <div class="columns">
             <div class="column is-1 solid">.is-1</div>
@@ -132,8 +147,24 @@
             <div class="column is-6 solid">.is-6</div>
         </div>
         <div class="columns">
+            <div class="column is-3 solid">.is-3</div>
+            <div class="column is-9 solid">.is-9</div>
+        </div>
+        <div class="columns">
             <div class="column is-4 solid">.is-4</div>
             <div class="column is-8 solid">.is-8</div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8 solid">.is-8 .is-centered</div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-3 solid">.is-6 .is-offset-3</div>
+        </div>
+        <div class="columns">
+            <div class="column is-4 is-offset-4 solid">.is-4 .is-offset-4</div>
+        </div>
+        <div class="columns">
+            <div class="column is-2 is-offset-5 solid">.is-2 .is-offset-5</div>
         </div>
     </div>
 
@@ -378,6 +409,118 @@
 
     <br>
 
+    <h2 class="title has-text-centered">Messages</h2>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third">
+                <article class="message is-dark">
+                    <div class="message-header">
+                        <p>.message-header</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-dark
+                    </div>
+                </article>
+                <article class="message is-primary">
+                    <div class="message-header">
+                        <p>.message-header</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-primary
+                    </div>
+                </article>
+                <article class="message is-info">
+                    <div class="message-header">
+                        <p>.message-header</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-info
+                    </div>
+                </article>
+                <article class="message is-warning">
+                    <div class="message-header">
+                        <p>.message-header</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-warning
+                    </div>
+                </article>
+                <article class="message is-danger">
+                    <div class="message-header">
+                        <p>.message-header</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-danger
+                    </div>
+                </article>
+            </div>
+            <div class="column is-one-third">
+                <article class="message is-dark">
+                    <div class="message-body">
+                        .message-body .is-dark
+                    </div>
+                </article>
+                <article class="message is-primary">
+                    <div class="message-body">
+                        .message-body .is-primary
+                    </div>
+                </article>
+                <article class="message is-info">
+                    <div class="message-body">
+                        .message-body .is-info
+                    </div>
+                </article>
+                <article class="message is-warning">
+                    <div class="message-body">
+                        .message-body .is-warning
+                    </div>
+                </article>
+                <article class="message is-danger">
+                    <div class="message-body">
+                        .message-body .is-danger
+                    </div>
+                </article>
+            </div>
+            <div class="column is-one-third">
+                <article class="message is-small">
+                    <div class="message-header">
+                        <p>.is-small</p>
+                        <button class="delete is-small" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-small
+                    </div>
+                </article>
+                <article class="message is-medium">
+                    <div class="message-header">
+                        <p>.is-medium</p>
+                        <button class="delete is-medium" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-medium
+                    </div>
+                </article>
+                <article class="message is-large">
+                    <div class="message-header">
+                        <p>.is-large</p>
+                        <button class="delete is-large" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        .message .is-large
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
     <h2 class="title has-text-centered">Progress Bars</h2>
 
     <div class="container">
@@ -435,7 +578,7 @@
             <div class="column is-half">
                 <h2 class="subtitle">Table Modifiers</h2>
                 <div class="box">
-                    <strong>Additional Classes: </strong>
+                    <strong>Additional Table Classes: </strong>
                     <br>
                     <br>
                     <span class="is-italic">.is-bordered .is-striped .is-narrow .is-hoverable .is-fullwidth</span>
@@ -656,6 +799,540 @@
             </div>
         </div>
     </div>
+
+    <br>
+
+    <h2 class="title has-text-centered">Modal Windows</h2>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-full">
+                <div class="buttons is-centered">
+                    <button class="button is-info">
+                        Example Modal
+                    </button>
+                    <button class="button is-warning">
+                        Image Modal
+                    </button>
+                    <button class="button is-danger">
+                        Card Modal
+                    </button>
+                </div>
+
+                <!-- Modal Example -->
+                <div id="modal-example" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        This is an example modal window.
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+                <!-- Modal Image -->
+                <div id="modal-image" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <p class="image is-4by3">
+                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+                        </p>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+                <!-- Modal Card -->
+                <div id="modal-card" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Modal title</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <!-- Content ... -->
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button is-success">Save changes</button>
+                            <button class="button">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h2 class="title has-text-centered">Tabs</h2>
+
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-half">
+                <h3 class="subtitle">Default</h3>
+                <div class="box">
+                    <div class="tabs">
+                        <ul>
+                            <li class="is-active"><a>Pictures</a></li>
+                            <li><a>Music</a></li>
+                            <li><a>Videos</a></li>
+                            <li><a>Documents</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <h3 class="subtitle">.is-boxed.is-centered</h3>
+                <div class="box">
+                    <div class="tabs is-centered is-boxed">
+                        <ul>
+                            <li class="is-active">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                                    <span>Pictures</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                                    <span>Music</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                                    <span>Videos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                                    <span>Documents</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column is-half">
+                <h3 class="subtitle">.is-toggle</h3>
+                <div class="box">
+                    <div class="tabs is-toggle">
+                        <ul>
+                            <li class="is-active">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                                    <span>Pictures</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                                    <span>Music</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                                    <span>Videos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                                    <span>Documents</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <h3 class="subtitle">.is-toggle.is-toggle-rounded</h3>
+                <div class="box">
+                    <div class="tabs is-toggle is-toggle-rounded">
+                        <ul>
+                            <li class="is-active">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-image"></i></span>
+                                    <span>Pictures</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-music"></i></span>
+                                    <span>Music</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-film"></i></span>
+                                    <span>Videos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+                                    <span>Documents</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-full">
+                <h3 class="subtitle">.is-fullwidth</h3>
+                <div class="box">
+                    <div class="tabs is-fullwidth">
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="icon"><i class="fas fa-angle-left" aria-hidden="true"></i></span>
+                                    <span>Left</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon"><i class="fas fa-angle-up" aria-hidden="true"></i></span>
+                                    <span>Up</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span>Right</span>
+                                    <span class="icon"><i class="fas fa-angle-right" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h2 class="title has-text-centered">Forms</h2>
+
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-half">
+                <div class="box">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Text input">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        <p class="help is-success">This username is available</p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                        <p class="help is-danger">This email is invalid</p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Select dropdown</option>
+                                    <option>With options</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Submit</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-text">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="subtitle">.is-grouped.is-grouped-multiline</h2>
+                <div class="box">
+                    <div class="field is-grouped is-grouped-multiline">
+                        <p class="control">
+                            <a class="button">Lorem</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">ipsum</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">sit</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">dolor</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">amet</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">Lorem</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">ipsum</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">sit</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">amet</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">dolor</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">Lorem</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">ipsum</a>
+                        </p>
+                        <p class="control">
+                            <a class="button">sit</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <h2 class="subtitle">.is-horizontal</h2>
+                <div class="box">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">From</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Name">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label"></div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <a class="button is-static">
+                                            +44
+                                        </a>
+                                    </p>
+                                    <p class="control is-expanded">
+                                        <input class="input" type="tel" placeholder="Your phone number">
+                                    </p>
+                                </div>
+                                <p class="help">Do not enter the first zero</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Department</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-narrow">
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>Business development</option>
+                                            <option>Marketing</option>
+                                            <option>Sales</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label class="label">Already a member?</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-narrow">
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="member">
+                                        Yes
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="member">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Subject</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                                </div>
+                                <p class="help is-danger">
+                                    This field is required
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Question</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <!-- Left empty for spacing -->
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary">
+                                        Send message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="subtitle">.is-grouped.is-grouped-centered</h2>
+                <div class="box">
+                    <div class="field is-grouped is-grouped-centered">
+                        <p class="control">
+                            <a class="button is-primary">
+                                Submit
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-light">
+                                Cancel
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="subtitle">.is-grouped p.control.is-expanded</h2>
+                <div class="box">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" placeholder="Find a repository">
+                        </p>
+                        <p class="control">
+                            <a class="button is-info">
+                                Search
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="column is-half">
+                
+
+                
+            </div>
+            <div class="column is-half">
+                
+            </div>
+        </div>
+
+        <br>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <h2 class="title">Footer</h2>
+                <p>
+                    <strong>Bulma Cheatsheet</strong>
+                </p>
+            </div>
+        </footer>
 </body>
 
 </html>
