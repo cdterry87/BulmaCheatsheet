@@ -30,6 +30,16 @@
             margin-right: 15px;
         }
     </style>
+
+    <script>
+        function isActive(id) {
+            document.getElementById(id).classList.add('is-active');
+        }
+
+        function isNotActive(id) {
+            document.getElementById(id).classList.remove('is-active');
+        }
+    </script>
 </head>
 
 <body>
@@ -808,47 +818,49 @@
         <div class="columns">
             <div class="column is-full">
                 <div class="buttons is-centered">
-                    <button class="button is-info">
+                    <button class="button is-info" onclick="isActive('modal-example')">
                         Example Modal
                     </button>
-                    <button class="button is-warning">
+                    <button class="button is-warning" onclick="isActive('modal-image')">
                         Image Modal
                     </button>
-                    <button class="button is-danger">
+                    <button class="button is-danger" onclick="isActive('modal-card')">
                         Card Modal
                     </button>
                 </div>
 
                 <!-- Modal Example -->
                 <div id="modal-example" class="modal">
-                    <div class="modal-background"></div>
+                    <div class="modal-background" onclick="isNotActive('modal-example')"></div>
                     <div class="modal-content">
-                        This is an example modal window.
+                        <div class="box">
+                            This is an example modal window...
+                        </div>
                     </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
+                    <button class="modal-close is-large" aria-label="close" onclick="isNotActive('modal-example')"></button>
                 </div>
 
                 <!-- Modal Image -->
                 <div id="modal-image" class="modal">
-                    <div class="modal-background"></div>
+                    <div class="modal-background" onclick="isNotActive('modal-image')"></div>
                     <div class="modal-content">
                         <p class="image is-4by3">
                             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
                         </p>
                     </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
+                    <button class="modal-close is-large" aria-label="close" onclick="isNotActive('modal-image')"></button>
                 </div>
 
                 <!-- Modal Card -->
                 <div id="modal-card" class="modal">
-                    <div class="modal-background"></div>
+                    <div class="modal-background" onclick="isNotActive('modal-card')"></div>
                     <div class="modal-card">
                         <header class="modal-card-head">
                             <p class="modal-card-title">Modal title</p>
-                            <button class="delete" aria-label="close"></button>
+                            <button class="delete" aria-label="close"  onclick="isNotActive('modal-card')"></button>
                         </header>
                         <section class="modal-card-body">
-                            <!-- Content ... -->
+                            This is a modal card window...
                         </section>
                         <footer class="modal-card-foot">
                             <button class="button is-success">Save changes</button>
