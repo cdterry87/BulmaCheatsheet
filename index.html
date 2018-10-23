@@ -36,7 +36,12 @@
           var navToggle = document.getElementById("navbarBasicExample");
           navToggle.classList.toggle("is-active");
         }
-
+        function isActive(id) {
+            document.getElementById(id).classList.add('is-active');
+        }
+        function isNotActive(id) {
+            document.getElementById(id).classList.remove('is-active');
+        }
     </script>
 </head>
 
@@ -861,8 +866,8 @@
                             This is a modal card window...
                         </section>
                         <footer class="modal-card-foot">
-                            <button class="button is-success">Save changes</button>
-                            <button class="button">Cancel</button>
+                            <button class="button is-success" onclick="isNotActive('modal-card')">Save changes</button>
+                            <button class="button" onclick="isNotActive('modal-card')">Cancel</button>
                         </footer>
                     </div>
                 </div>
