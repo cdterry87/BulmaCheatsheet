@@ -32,13 +32,11 @@
     </style>
 
     <script>
-        function isActive(id) {
-            document.getElementById(id).classList.add('is-active');
+        function toggleNavigation() {
+          var navToggle = document.getElementById("navbarBasicExample");
+          navToggle.classList.toggle("is-active");
         }
 
-        function isNotActive(id) {
-            document.getElementById(id).classList.remove('is-active');
-        }
     </script>
 </head>
 
@@ -46,7 +44,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">Bulma Cheatsheet</a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggleNavigation()">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
